@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nyg .card {
+    border-radius: 15px;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  }
+  .nyg .card:hover {
+    transform: translateY(20px);
+  }
+  .nyg .card:hover:before {
+    opacity: 1;
+  }
+  .nyg .card:hover .info {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+  .nyg .card img {
+    border-radius: 15px;
+  }
+  .nyg .card .info {
+    /* position: relative; */
+    /* z-index: 3; */
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  .nyg .card .info h1 {
+    margin: 0px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+  }

@@ -1,0 +1,574 @@
+body{
+    background: linear-gradient(to bottom, #488AC7, #AFDCEC);
+}
+.nav-item .dropdown-menu a:hover{
+  background-color: black !important;
+}
+
+.cover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
+    line-height: 150%;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+  .navbar-brand {
+    color: white;
+    
+  }
+  .collapse a {
+    color: white !important;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  second {
+    color:gold !important;
+    font-size: 1.5em !important;
+  }
+  .img2 {
+    transition: 1s;
+  }
+  .img2:hover {
+    border-radius: 0% !important;
+  }
+  .img1 {
+    transition: 1s;
+  }
+  .img1:hover {
+    border-radius: 0% !important;
+  }
+  .carousel-caption {
+    color: white !important;
+    text-shadow: 3px 4px 10px white !important;
+    animation: slideInFromBottom 1s ease-in-out;
+  }
+  .carousel-caption h1 {
+    font-size: 3em !important;
+  }
+  p{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 23px;
+  }
+
+  .ab{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 35px;
+  }
+
+  .c1 h1{
+    font-family:cursive;
+  }
+
+  .con1{
+    background-color:#123456;
+  }
+  .con2{
+    background-color: lightgoldenrodyellow;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container:hover .overlay1 {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.co1{
+  background-image: url(../img/bagan1.jpg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+.co2{
+  background-image: url(../img/nyaung.jpg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+.co3{
+  background-image: url(../img/kharr.jpeg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+.co4{
+  background-image: url(../img/1.jpg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+
+.co5{
+  background-image: url(/img/Zwekabin.jpg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+
+.cover1{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius:10px;
+  line-height: 150%;
+}
+
+.title{
+  font-family: cursive;
+}
+
+/* contact */
+
+/* contact */
+
+
+/*mmk-naung cho*/
+
+
+.box{
+  background-color: #000;
+  font-family: 'Lobster', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+.box > img{
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+.box:hover > img{
+  opacity: 0.5;
+  filter: blur(5px);
+  transform: scale(1.05);
+}
+.box .box-content{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0 0;
+  transform: translateY(-50%);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+}
+.box .box-content .overlay-img{
+  width: 50%;
+  margin: 0 auto;
+}
+.box .box-content .overlay-img img{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(80%);
+  transition: all 0.3s ease 0.1s;
+}
+.box:hover .box-content .overlay-img img{
+  opacity: 1;
+  transform: translateY(0);
+}
+.box .box-content .inner-content{
+  background-color: #000;
+  padding: 10px 15px;
+  opacity: 0;
+  transform: scaleY(1.5);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.box:hover .box-content .inner-content{
+  opacity: 1;
+  transform: scaleY(1);
+}
+.box .title{
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0;
+}
+.box .post{
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+@media only screen and (max-width:990px){
+  .box { margin: 0 0 30px; }
+}
+
+/*mmk innlay */
+
+
+/* nadi */
+
+.our-services {
+  margin-top:  50px;
+}
+.flip-container {
+  -webkit-perspective: 1000;
+  margin: 0 auto 60px auto;
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.flip-container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor:pointer;
+}
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor:pointer;
+}
+
+.front {
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.front h3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.front img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.back {
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(180deg);
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.back h3 {
+  margin-top: 20px;
+}
+
+.back p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-right:15px;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
+
+/* nadi */
+  .animatable {
+    /* initially hide animatable objects */
+    visibility: hidden;
+  
+    /* initially pause animatable objects their animations */
+    animation-play-state: paused;
+  }
+  
+  /* show objects being animated */
+  .animated {
+    visibility: visible;
+  
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-play-state: running;
+  }
+
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* CSS Animations (extracted from http://glifo.uiparade.com/) */
+  @keyframes fadeIn {
+    0%,
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes bounceInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-2000px);
+    }
+    60% {
+      transform: translateX(20px);
+    }
+    80% {
+      transform: translateX(-5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      transform: translateX(-20px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(1000px);
+    }
+    100% {
+      transform: translateY();
+    }
+  }
+  
+  @keyframes fadeBgColor {
+    0%,
+    70% {
+      background: none;
+    }
+    100% {
+      background: #464646;
+    }
+  }
+  
+  .animated.animationDelay {
+    animation-delay: 0.4s;
+  }
+  .animated.animationDelayMed {
+    animation-delay: 1.2s;
+  }
+  .animated.animationDelayLong {
+    animation-delay: 1.6s;
+  }
+  .animated.fadeBgColor {
+    animation-name: fadeBgColor;
+  }
+  .animated.bounceIn {
+    animation-name: bounceIn;
+  }
+  .animated.bounceInRight {
+    animation-name: bounceInRight;
+  }
+  .animated.bounceInLeft {
+    animation-name: bounceInLeft;
+  }
+  .animated.fadeIn {
+    animation-name: fadeIn;
+  }
+  .animated.fadeInDown {
+    animation-name: fadeInDown;
+  }
+  .animated.fadeInUp {
+    animation-name: fadeInUp;
+  }
+  .animated.moveUp {
+    animation-name: moveUp;
+  }

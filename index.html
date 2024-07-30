@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Go Travel Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder fs-3 p-2 " href="#">
+            <second>Let's Go </second><sup>Travel Guide</sup></sub>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Trips
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="winter.html">Winter Trip</a></li>
+                  <li>
+                    <a class="dropdown-item" href="heritage.html">Heritage Trip</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="summer.html">Summer Trip</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hiking.html">Hiking & Trekking Trip</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/bagan1.jpg" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="mb-0">Bagan</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/inn1.jpg" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="mb-0">Inn Lay</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/popa.jpg" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          Mount Poppa
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/kar4.jpg" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="mb-0">Mount Karkaborazi</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/nyaung.jpg" class="d-block w-100 vh-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="mb-0">Nyaung Oo Phee Island</h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel -->
+
+  <div class="container-fluid cover1">
+    <div class="row pb-3">
+      <div class="col-5 mt-3">
+        <div class="animatable bounceInLeft">
+          <img src="./img/winter1.png" class="img-thumbnail" alt="">
+        </div>
+      </div>
+      <div class="col-7 mt-3">
+        <div class="card animatable fadeInUp">
+          <img src="./img/1-2.jpg" class="img-thumbnail" alt="..." />
+          <div class="card-body">
+            <h1>Winter Trip</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+              voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+              ducimus quas error commodi iure.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+              voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+              ducimus quas error commodi iure.
+            </p>
+            <a href="./winter.html"><button class="btn btn-block btn-info">Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-bottom border-3 border-warning">
+
+  <div class="container-fluid cover1">
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="image-container">
+              <img src="./img/nyaung2.jpg" class="img-thumbnail rounded-top-5" alt="">
+                <div class="overlay">
+                  <div class="text">Nyaung Oo Phee Island</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-12">
+            <div class="image-container">
+              <img src="./img/ngapali.jpg" class="img-thumbnail rounded-bottom-5" alt="">
+              <div class="overlay1">
+                <div class="text">Ngapali Beach</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 p-2">
+        <h1>Summer Trip</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+         
+        </p>
+        <a href="./summer.html"><button class="btn btn-block btn-info">Read More</button></a>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="image-container">
+              <img src="./img/nyaung.jpg" class="img-thumbnail rounded-top-5" alt="">
+              <div class="overlay">
+                <div class="text">Gaw Yan Gyi Island</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-12">
+            <div class="image-container">
+              <img src="./img/ngwe1.jpg" class="img-thumbnail rounded-bottom-5" alt="">
+              <div class="overlay1">
+                <div class="text">Ngwe Saung Beach</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-bottom border-3 border-warning">
+
+  <div class="container-fluid c1">
+    <div class="row mt-3">
+      <div class="col-12 text-center">
+        <img src="./img/hiking2.png" class="img-thumbnail" alt="">
+      </div>
+    </div>
+    <div class="row mt-3 cover">
+      <div class="col-12 text-justify p-3">
+        <h1>Hiking & Trekking Trip</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+        </p>
+        <a href="./hiking.html"><button class="btn btn-block btn-info">Read More</button></a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-bottom border-3 border-warning">
+
+  <div class="container-fluid c1">
+    <h1>Hertiage Trip</h1>
+    <div class="row">
+      <div class="col-4">
+        <img src="./img/bagan.jpg" class="img-thumbnail" alt="">
+      </div>
+      <div class="col-4">
+        <img src="./img/bagan1.jpg" class="img-thumbnail" alt="">
+      </div>
+      <div class="col-4">
+        <img src="./img/bagan2.jpg" class="img-thumbnail" alt="">
+      </div>
+    </div>
+    <div class="row mt-2 cover">
+      <div class="col-12 p-3">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Magnam dolorem eligendi eius perferendis quo perspiciatis rem mollitia
+          voluptates odit illum facere ipsa fugiat reprehenderit aliquam,
+          ducimus quas error commodi iure.
+        </p>
+        <a href="./heritage.html"><button class="btn btn-block btn-info">Read More</button></a>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-4">
+        <img src="./img/bagan4.jpg" class="img-thumbnail" alt="">
+      </div>
+      <div class="col-4">
+        <img src="./img/bagan3.jpg" class="img-thumbnail" alt="">
+      </div>
+      <div class="col-4">
+        <img src="./img/bagan5.jpg" class="img-thumbnail" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer Section -->
+  <div class="container-fluid mt-3 con1 text-white p-3">
+    <div class="row">
+      <div class="col-4">
+        <h1>Feedback</h1>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <div class="mb-3 text-center">
+          <button class="btn btn-success">Submit</button>
+          <button class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
+      <div class="col-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7637.026112561592!2d96.11943179357907!3d16.850496200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194eb93841c29%3A0x7fca39a6c09ca69e!2sDIR-ACE%20Technology%20Ltd.!5e0!3m2!1sen!2smm!4v1718079524009!5m2!1sen!2smm"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-4 pe-5">
+        <div class="row pt-5 pe-5">
+          <div class="col-12 text-center"><h3>Contact Us</h3></div>
+        </div>
+        <div class="row pt-3 pe-5">
+          <div class="col-6"> <i class="fa fa-envelope" aria-hidden="true"></i> Email:</div>
+          <div class="col-6">group1@gmail.com</div>
+        </div>
+        <div class="row pt-4 pe-5">
+          <div class="col-6"> <i class="fa fa-phone" aria-hidden="true"></i> Phone:</div>
+          <div class="col-6">(+95) 9987678667</div>
+        </div>
+        <div class="row pt-4 pe-5">
+          <div class="col-6"> <i class="fa fa-address-book" aria-hidden="true"></i> Address:</div>
+          <div class="col-6">Building 17, 3rd Floor Myanmar Info-Tech, Hlaing Campus.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+
+  <script src="./js/animate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

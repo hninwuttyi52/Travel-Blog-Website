@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header js--header" data-section-name="header">
+        <h1 class="header__title">Header Content</h1>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+        <style>
+            @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  background: rgba(238, 238, 238, 0.5);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  transition: all 0.3s ease;
+}
+.header.is--active {
+  opacity: 1;
+  position: fixed;
+}
+.header__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-weight: 300px;
+}
+
+.footer {
+  background: #333;
+  color: #eee;
+}
+.footer__copyright {
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 12px;
+}
+.footer__text {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.section-navigate {
+  position: fixed;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  z-index: 1031;
+  opacity: 1;
+  transition: opacity 0.05s ease;
+}
+.section-navigate.is--inactive {
+  opacity: 0;
+}
+.section-navigate__items:before {
+  content: "";
+  width: 1px;
+  height: 180%;
+  background: linear-gradient(transparent 0, white 15%, white 85%, transparent);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-navigate__link {
+  text-decoration: none;
+  position: relative;
+}
+.section-navigate__link:before {
+  content: "●";
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  line-height: 26px;
+  color: white;
+  position: relative;
+  left: 2px;
+}
+.section-navigate__link:hover .section-navigate__name {
+  opacity: 1;
+}
+.section-navigate__link.is--active:before {
+  content: "●";
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  left: 0;
+}
+.section-navigate__name {
+  position: absolute;
+  top: 5px;
+  right: 23px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.section__first, .section__second, .section__third, .section__fourth, .section__fifth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 300;
+  color: white;
+  transition: opacity 0.4s ease;
+}
+.section__first.is--inactive, .section__second.is--inactive, .section__third.is--inactive, .section__fourth.is--inactive, .section__fifth.is--inactive {
+  opacity: 0;
+}
+.section__first {
+  position: relative;
+}
+.section__first-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__first-title {
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.5;
+  width: 85%;
+}
+.section__second {
+  background: seagreen;
+}
+.section__second .section-card__content, .section__second .section-card__title {
+  text-align: center;
+}
+.section__second .section-card__title {
+  font-size: 16px;
+}
+.section__second .section-card__content {
+  font-size: 14px;
+  text-transform: none;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.section__second-card {
+  width: 27.5%;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  box-shadow: 1px 1px 7px black;
+}
+.section__second-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__third {
+  background: steelblue;
+  display: flex;
+  flex-direction: column;
+}
+.section__third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__third-left, .section__third-right {
+  font-size: 12px;
+  width: 40%;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.section__third-title {
+  text-align: center;
+  margin: 10px;
+}
+.section__fourth {
+  background: gold;
+  color: #444;
+}
+.section__fourth-content {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 36px;
+  line-height: 1.4;
+}
+.section__fourth-title {
+  margin-top: 80px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+.section__fifth {
+  position: relative;
+  font-weight: 100;
+  color: #333;
+  background: radial-gradient(center, lightgrey, white);
+}
+        </style>
+    </header>
+    
+    <nav class="section-navigate js--navigate">
+        <ul class="section-navigate__items js--navigate-items">
+            <li class="section-navigate__item">
+                <a href="#first" class="section-navigate__link js--navigate-link is--active">
+                    <span class="section-navigate__name">First</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#second" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Second</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#third" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Third</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#fourth" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Fourth</span>
+                </a>
+            </li>
+            <li class="section-navigate__item">
+                <a href="#fifth" class="section-navigate__link js--navigate-link">
+                    <span class="section-navigate__name">Fifth</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="section__first is--scrolled js--scrollify" data-section-name="first">
+        <img src="http://lorempixel.com/1280/720/nature" alt="" />
+        <div class="section__first-content">
+            <h1 class="section__first-title animated js--first-title">Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+        </div>
+    </section>
+    
+    <section class="section__second is--scrolled js--scrollify" data-section-name="second">
+        <div class="section__second-container">
+            <div class="section__second-card animated js--section-card">
+                <h4 class="section-card__title">Lorem ipsum dolor sit amet consectetur</h4>
+                <div class="section-card__img">
+                    <img src="http://www.lorempixel.com/250/120" alt="" />
+                </div>
+                <div class="section-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fugiat numquam, neque recusandae, provident perspiciatis dolorem cum nulla molestias molestiae delectus, labore nihil quo deserunt maxime voluptatum unde cumque dolor.</p>
+                </div>
+            </div>
+            <div class="section__second-card animated js--section-card">
+                <h4 class="section-card__title">Lorem ipsum dolor sit amet consectetur</h4>
+                <div class="section-card__img">
+                    <img src="http://www.lorempixel.com/250/120" alt="" />
+                </div>
+                <div class="section-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nam perspiciatis ipsa, quidem eum eveniet quisquam excepturi, cumque rem placeat eos quos voluptatem quibusdam possimus doloremque voluptas, sequi similique magnam.</p>
+                </div>
+            </div>
+            <div class="section__second-card animated js--section-card">
+                <h4 class="section-card__title">Lorem ipsum dolor sit amet consectetur</h4>
+                <div class="section-card__img">
+                    <img src="http://www.lorempixel.com/250/120" alt="" />
+                </div>
+                <div class="section-card__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad fugit amet perspiciatis aliquam, nihil voluptates eum sapiente fuga, quidem necessitatibus rerum natus inventore deleniti id sunt, numquam incidunt facere consequuntur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section__third is--scrolled js--scrollify js--third" data-section-name="third">
+        <h2 class="section__third-title animated js--third-title">Third</h2>
+        
+        <div class="section__third-container">
+            <div class="section__third-left animated js--third-left">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt exercitationem reiciendis eius consequuntur fugit quos nulla natus, aperiam tenetur dolor unde aliquam sequi consequatur culpa est nemo incidunt ipsa veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur adipisci autem porro eius natus totam necessitatibus consectetur maxime quae culpa? Amet sunt neque velit porro officia alias possimus est doloribus!
+            </div>
+            <div class="section__third-right animated js--third-right">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maxime odit cum quod blanditiis facilis nobis repellat id nulla, debitis architecto ipsam, suscipit tempora et itaque ut totam eveniet necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus rerum eaque vel inventore ipsum, consequatur perferendis aliquam est dolor facilis illum impedit. Itaque, dignissimos recusandae tempora magnam explicabo distinctio iste.
+            </div>
+        </div>
+    </section>
+    
+    <section class="section__fourth is--scrolled js--scrollify" data-section-name="fourth">
+        <h2 class="section__fourth-title">Non-dynamic height section</h2>
+        <p class="section__fourth-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque illum totam saepe. Temporibus, dicta quod maiores dolorum harum numquam voluptates voluptatem placeat odit. Assumenda nemo omnis laboriosam sint eaque.</p>
+    </section>
+    
+    <section class="section__fifth is--scrolled js--scrollify" data-section-name="fifth">Fifth</section>
+    
+    <footer class="footer js--footer" data-section-name="footer">
+        <p class="footer__text">Footer Section</p>
+        <p class="footer__copyright">Copyright (c)</p>
+    </footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.14/jquery.scrollify.min.js"></script>
+<script src="/scroll.js"></script>
+</body>
+</html>
